@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#be5025</color>
+    <color name="newPrimary">#7f0000</color>
+    <color name="border_profile_image">#FF000000</color>
+    <color name="primary_light">#d87067</color>
+    <color name="primary_dark">#6f1216</color>
+    <color name="primary_text">#212121</color>
+    <color name="red">#aa0000</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="secondary_text">#CFD9ED</color>
+
+    <color name="MainRed">#BD042F</color>
+    <color name="WhiteBackground">#F1F1F1</color>
+    <color name="PrimaryText">#272727</color>
+    <color name="SecondaryText">#83001E</color>
+    <color name="HintColorText">#3C3C3C</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#008000</color>
+
+
+    <color name="colorPrimaryTheme">#BD042F</color>
+    <color name="colorPrimaryVariantTheme">#970728</color>
+    <color name="colorOnPrimaryTheme">#FFFFFFFF</color>
+    <color name="colorSecondaryTheme">#FF03DAC5</color>
+    <color name="colorSecondaryVariantTheme">#FF018786</color>
+    <color name="colorOnSeconadryTheme">#FFF</color>
+</resources>

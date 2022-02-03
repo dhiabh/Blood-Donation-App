@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/WhiteBackground"
+    tools:context=".activities.Settings.ProfileActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/MainRed"
+        android:elevation="@dimen/_4sdp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_profile"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:fontFamily="@font/lato_light"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:elevation="@dimen/_4sdp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold"
+        android:fontFamily="@font/lato_regular"
+        android:textColor="@color/PrimaryText"
+        android:gravity="center"
+        android:textAllCaps="true"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImage"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@color/MainRed"
+        android:src="@drawable/profile_image"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_10sdp"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:textSize="@dimen/_18ssp"
+        android:textStyle="bold"
+        android:textColor="@color/PrimaryText"
+        android:fontFamily="@font/lato_regular"
+        android:gravity="center"
+        android:textAllCaps="true"/>
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:textSize="@dimen/_18ssp"
+        android:textColor="@color/PrimaryText"
+        android:fontFamily="@font/lato_regular"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/phoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:textSize="@dimen/_18ssp"
+        android:textColor="@color/PrimaryText"
+        android:fontFamily="@font/lato_regular"
+        android:gravity="center"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/bloodGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:textSize="@dimen/_18ssp"
+        android:textColor="@color/PrimaryText"
+        android:fontFamily="@font/lato_regular"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/editProfile"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/lato_regular"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/edit_text_bg"
+        android:text="@string/edit_profile"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/contactButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/lato_regular"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/edit_text_bg"
+        android:text="@string/contact"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+
+</LinearLayout>

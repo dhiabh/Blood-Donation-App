@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditText
+        android:id="@+id/registerFullName"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/full_name"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edit_text_bg_first"
+        android:imeOptions="actionDone"
+        android:singleLine="true"/>
+
+
+    <LinearLayout
+        android:id="@+id/bloodGroupLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/edit_text_bg_first"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/registerFullName">
+        <Spinner
+            android:id="@+id/bloodGroupSpinner"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/white"
+            android:entries="@array/bloodGroups"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="10dp" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/anonymousLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_alignStart="@id/bloodGroupLayout"
+        android:layout_below="@id/bloodGroupLayout">
+        <TextView
+            android:id="@+id/anonymousText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/anonymous_mode"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_40sdp"/>
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/anonymousSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:theme="@style/SwitchButton" />
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/MainRed"
+        android:textSize="16sp"
+        android:fontFamily="@font/lato_regular"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/anonymousLayout" />
+
+</RelativeLayout>

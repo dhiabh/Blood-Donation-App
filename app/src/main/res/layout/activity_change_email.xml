@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/WhiteBackground"
+    tools:context=".activities.Settings.ChangeEmailActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/MainRed"
+        android:elevation="@dimen/_4sdp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/discard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_close"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email_reset"
+                android:fontFamily="@font/lato_light"
+                android:textSize="22sp"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:layout_marginLeft="@dimen/_134sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            />
+        <TextView
+            android:id="@+id/textReset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reset_your_email_here"
+            android:fontFamily="@font/lato_light"
+            android:textColor="@color/PrimaryText"
+            android:textSize="@dimen/_25ssp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_below="@id/logo"
+            android:layout_marginTop="10dp"/>
+
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:textColor="@color/PrimaryText"
+            android:textColorHint="@color/HintColorText"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/edit_text_bg"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:layout_centerHorizontal="true"
+            android:drawableEnd="@drawable/ic_baseline_visibility_24"
+            android:longClickable="false"
+            android:singleLine="true"
+            android:layout_below="@+id/textReset"/>
+
+        <EditText
+            android:id="@+id/newEmail"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:textColor="@color/PrimaryText"
+            android:textColorHint="@color/HintColorText"
+            android:inputType="textEmailAddress"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/edit_text_bg"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:layout_below="@+id/password"/>
+
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="@string/reset_my_email"
+            android:textAllCaps="false"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20ssp"
+            android:fontFamily="@font/lato_regular"
+            android:background="@drawable/button_bg"
+            android:layout_below="@id/newEmail"/>
+    </RelativeLayout>
+
+</LinearLayout>

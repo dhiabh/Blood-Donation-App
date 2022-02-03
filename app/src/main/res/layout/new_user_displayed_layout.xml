@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="140dp"
+    android:layout_height="180dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginStart="10dp"
+    android:background="@drawable/background_recyler_view"
+    android:layout_marginEnd="10dp">
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userProfileImage"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        app:civ_border_color="@color/WhiteBackground"
+        app:civ_border_width="1dp"
+        android:elevation="5dp"
+        android:src="@drawable/profile_image"/>
+
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/WhiteBackground"
+        android:layout_gravity="center"
+        android:fontFamily="@font/lato_regular"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp" />
+    <TextView
+        android:id="@+id/bloodGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/WhiteBackground"
+        android:layout_gravity="center"
+        android:fontFamily="@font/lato_regular"
+        android:textAllCaps="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="5dp"/>
+
+
+
+</LinearLayout>

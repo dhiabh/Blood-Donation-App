@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/WhiteBackground"
+    tools:context=".activities.Settings.EditProfileActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/MainRed"
+        android:elevation="@dimen/_4sdp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/discard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_close"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edit_profile"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:fontFamily="@font/lato_light"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImage"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@color/MainRed"
+        android:src="@drawable/profile_image"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_40sdp" />
+
+    <TextView
+        android:id="@+id/changePhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/change_photo"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_15sdp"
+        android:fontFamily="@font/lato_bold"
+        android:textColor="@color/PrimaryText"
+        android:textSize="@dimen/_12ssp"
+        android:textStyle="bold"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/your_name"
+        android:inputType="text"
+        android:drawablePadding="@dimen/_10sdp"
+        android:textColor="@color/PrimaryText"
+        android:textColorHint="@color/HintColorText"
+        android:fontFamily="@font/lato_regular"
+        android:textSize="@dimen/_20ssp"
+        android:imeOptions="actionDone"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@null"/>
+
+    <View
+        android:layout_width="270dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@color/PrimaryText"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"/>
+    <TextView
+        android:layout_width="270dp"
+        android:layout_height="200dp"
+        android:layout_margin="@dimen/_10sdp"
+        android:text="@string/this_could_be_your_first_name_or_a_nickname_it_s_how_you_ll_appear_on_blood_donation_app"
+        android:layout_gravity="center"
+        android:fontFamily="@font/lato_regular"
+        android:textSize="@dimen/_10ssp"
+        android:textColor="@color/SecondaryText"/>
+
+
+
+</LinearLayout>

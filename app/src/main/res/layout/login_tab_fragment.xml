@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/title"
+        android:text="@string/blood_donation_app"
+        android:fontFamily="@font/italiana_regular"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_30ssp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"/>
+
+
+        <EditText
+            android:id="@+id/loginEmail"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="60dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/edit_text_bg_first"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:layout_below="@id/title"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:id="@+id/loginPassword"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text_bg_first"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/loginEmail"
+            android:drawableEnd="@drawable/ic_baseline_visibility_24"
+            android:longClickable="false"
+            android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_password"
+        android:textColor="@color/white"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintHorizontal_bias="1"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_below="@+id/loginPassword"
+        android:layout_alignEnd="@+id/loginPassword" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textSize="16sp"
+        android:fontFamily="@font/lato_regular"
+        android:textStyle="bold"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/MainRed"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/forgotPassword"/>
+
+    <!--
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        app:tint="@null"
+        android:src="@drawable/ic_google"
+        android:layout_below="@id/loginButton"
+        android:elevation="35dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="80dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabFacebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        app:tint="@null"
+        android:src="@drawable/ic_facebook"
+        app:layout_constraintHorizontal_bias="1"
+        android:elevation="35dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_toRightOf="@id/fabGoogle"
+        android:layout_below="@id/loginButton"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabTwiiter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        app:tint="@null"
+        android:src="@drawable/ic_twitter"
+        android:elevation="35dp"
+        app:layout_constraintHorizontal_bias="0"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/loginButton"
+        android:layout_toRightOf="@id/fabFacebook"/>-->
+
+
+
+</RelativeLayout>
